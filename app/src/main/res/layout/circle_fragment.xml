@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:cbt="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!-- 添加自定义控件及属性 -->
+    <com.baway.xushuai.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        cbt:leftBackground="@android:color/holo_blue_bright"
+        cbt:leftText="全部"
+        cbt:leftTextColor="#000000"
+        cbt:rightBackground="@android:color/holo_blue_bright"
+        cbt:rightText="搜索"
+        cbt:rightTextColor="#000000"
+        cbt:tbTitle="圈子"
+        cbt:titleTextColor="#000000"
+        cbt:titleTextSize="15sp"/>
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </com.liaoinstan.springview.widget.SpringView>
+</LinearLayout>
